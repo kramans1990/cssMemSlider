@@ -1,8 +1,8 @@
 html {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: url("Background.jpg") no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 
 .main {
@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  background: url("Background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -25,10 +26,11 @@ body {
   row-gap: 3%;
   margin: 0 auto;
   border-radius: 5%;
+  overflow: hidden;
 }
 
 input {
-   display: none;
+  display: none;
 }
 
 .image {
