@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column-reverse;
+    height: 12vh;
+    justify-content: left;
+  }
+
+  .main {
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .text-container {
+    justify-self: start;
+    margin-left: -80%;
+  }
+
+  span {
+    margin-top: 5%;
+  }
+}
