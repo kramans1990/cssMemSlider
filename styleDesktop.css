@@ -10,17 +10,19 @@ html {
   height: 50%;
   margin: 0 auto;
   display: flex;
+  overflow: hidden;
 }
 
 body {  
   background-size: cover;
+  overflow: hidden;
 }
 
 .wrapper {
   width: 80%;
   display: grid;
   grid-template-rows: 70% 30%;
-  background: url("sliderBackground.jpg") no-repeat;
+  background: url("sliderbackground.jpg") no-repeat;
   background-size: cover;
   row-gap: 3%;
   margin: 0 auto;
@@ -42,6 +44,7 @@ input {
   opacity: 1;
   margin-left: 5%;
   transition: margin-left 2s, opacity 3s;
+  overflow: hidden;
 }
 
 #image2,
@@ -50,7 +53,7 @@ input {
 #text2,
 #text3,
 #text4 {
-  opacity: 0 ;
+  opacity: 0;
 }
 
 #text2,
@@ -79,6 +82,7 @@ input {
   column-gap: 10%;
   align-items: space-around;
   align-content: space-around;
+  overflow: hidden;
 }
 
 .navigation {
@@ -88,6 +92,7 @@ input {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .text-container {
@@ -95,6 +100,7 @@ input {
   height: 20%;
   max-width: 20%;
   display: flex;
+  overflow: hidden;
 }
 
 /* анимация текста */
@@ -313,4 +319,5 @@ input {
 span {
   margin-top: 1%;
   position: absolute;
+ 
 }
