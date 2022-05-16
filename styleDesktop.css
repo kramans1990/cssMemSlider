@@ -1,0 +1,315 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+  background: url("Background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+body {
+  background-size: cover;
+}
+
+.wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  background: url("sliderBackground.jpg") no-repeat;
+  background-size: cover;
+  row-gap: 3%;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+input {
+  display: none;
+}
+
+.image {
+  justify-self: center;
+  align-self: center;
+  min-width: 90%;
+  width: 90%;
+  height: 80%;
+  border-radius: 3%;
+  opacity: 1;
+  margin-left: 5%;
+  transition: margin-left 2s, opacity 3s;
+}
+
+#image2,
+#image3,
+#image4,
+#text2,
+#text3,
+#text4 {
+  opacity: 0;
+}
+
+#text2,
+#text3,
+#text4 {
+  margin-left: 20%;
+}
+
+.text {
+  color: black;
+  vertical-align: top;
+  margin-left: 0%;
+  transition: margin-left 2s, opacity 0.5s;
+  max-width: 1%;
+}
+
+.text:hover {
+  cursor: default;
+}
+
+.image-container {
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 10%;
+  align-items: space-around;
+  align-content: space-around;
+}
+
+.navigation {
+  width: 80%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 20%;
+  height: 20%;
+  max-width: 20%;
+  display: flex;
+}
+
+/* анимация текста */
+#slide1:checked~.wrapper>.navigation>.text-container>#text1 {
+  opacity: 1;
+  margin-left: 0%;
+}
+
+#slide1:checked~.wrapper>.navigation>.text-container>#text2 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide1:checked~.wrapper>.navigation>.text-container>#text3 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide1:checked~.wrapper>.navigation>.text-container>#text4 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide2:checked~.wrapper>.navigation>.text-container>#text1 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide2:checked~.wrapper>.navigation>.text-container>#text2 {
+  opacity: 1;
+  margin-left: 00%;
+}
+
+#slide2:checked~.wrapper>.navigation>.text-container>#text3 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide2:checked~.wrapper>.navigation>.text-container>#text4 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide3:checked~.wrapper>.navigation>.text-container>#text1 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide3:checked~.wrapper>.navigation>.text-container>#text2 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide3:checked~.wrapper>.navigation>.text-container>#text3 {
+  opacity: 1;
+  margin-left: 0%;
+}
+
+#slide3:checked~.wrapper>.navigation>.text-container>#text4 {
+  opacity: 0;
+  margin-left: 50%;
+}
+
+#slide4:checked~.wrapper>.navigation>.text-container>#text1 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide4:checked~.wrapper>.navigation>.text-container>#text2 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide4:checked~.wrapper>.navigation>.text-container>#text3 {
+  opacity: 0;
+  margin-left: -100%;
+}
+
+#slide4:checked~.wrapper>.navigation>.text-container>#text4 {
+  opacity: 1;
+  margin-left: 0%;
+}
+
+/* анимация изображений */
+#slide1:checked~.wrapper>.image-container>#image1 {
+  opacity: 1;
+  margin-left: 5%;
+}
+
+#slide1:checked~.wrapper>.image-container>#image2 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+#slide1:checked~.wrapper>.image-container>#image3 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+#slide1:checked~.wrapper>.image-container#image4 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+/*  */
+#slide2:checked~.wrapper>.image-container>#image1 {
+  opacity: 0;
+  margin-left: -105%;
+}
+
+#slide2:checked~.wrapper>.image-container>#image2 {
+  margin-left: 10%;
+  opacity: 1;
+}
+
+#slide2:checked~.wrapper>.image-container>#image3 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+#slide2:checked~.wrapper>.image-container>#image4 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+/*  */
+#slide3:checked~.wrapper>.image-container>#image1 {
+  opacity: 0;
+  margin-left: -105%;
+}
+
+#slide3:checked~.wrapper>.image-container>#image2 {
+  margin-left: -105%;
+  opacity: 0;
+}
+
+#slide3:checked~.wrapper>.image-container>#image3 {
+  margin-left: 15%;
+  opacity: 1;
+}
+
+#slide3:checked~.wrapper>.image-container>#image4 {
+  margin-left: 105%;
+  opacity: 0;
+}
+
+#slide4:checked~.wrapper>.image-container>#image1 {
+  opacity: 0;
+  margin-left: -105%;
+}
+
+#slide4:checked~.wrapper>.image-container>#image2 {
+  margin-left: -105%;
+  opacity: 0;
+}
+
+#slide4:checked~.wrapper>.image-container>#image3 {
+  margin-left: -105%;
+  opacity: 0;
+}
+
+#slide4:checked~.wrapper>.image-container>#image4 {
+  margin-left: 20%;
+  opacity: 1;
+}
+
+/* Анимация нажатия, выделение нажатой radiobutton */
+#slide1:checked~.wrapper>.navigation>.nav>#l1>#im1 {
+
+  opacity: 1;
+  content: url("buttonEnabled.png");
+}
+
+#slide2:checked~.wrapper>.navigation>.nav>#l2>#im2 {
+
+  opacity: 1;
+  content: url("buttonEnabled.png");
+}
+
+#slide3:checked~.wrapper>.navigation>.nav>#l3>#im3 {
+
+  opacity: 1;
+  content: url("buttonEnabled.png");
+}
+
+#slide4:checked~.wrapper>.navigation>.nav>#l4>#im4 {
+
+  opacity: 1;
+  content: url("buttonEnabled.png");
+}
+
+.nav {
+  width: 20%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: right;
+  justify-items: right;
+  height: 30%;
+  column-gap: 20%;
+}
+
+.radio {
+  opacity: 0.4;
+  content: url("buttonDisabled.png");
+  height: 100%;
+  transition: opacity 1.5s;
+  filter: saturate(7404%) contrast(400%);
+}
+
+.radio:hover {
+  filter: invert(16%) saturate(1404%) contrast(400%);
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+span {
+  margin-top: 1%;
+  position: absolute;
+}
