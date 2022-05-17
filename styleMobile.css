@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column-reverse;
+    height: 12vh;
+    justify-content: left;
+  }
+html{
+ 
+  overflow-y: hidden;
+}
+  .main {
+    width: 90vw;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .wrapper{
+    width: 90%;
+  }
+
+  .text-container {
+    justify-self: start;
+    margin-left: -80%;
+  }
+
+  span {
+    margin-top: 5%;
+  }
+  .nav{
+    column-gap: 20%;
+    margin-left: 20%;
+  }
+}
