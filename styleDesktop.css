@@ -315,9 +315,7 @@ input {
   cursor: pointer;
   transform: scale(1.4);
 }
-
 span {
   margin-top: 1%;
-  position: absolute;
- 
+  position: fixed; 
 }
